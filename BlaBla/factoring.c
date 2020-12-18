@@ -22,3 +22,5 @@ int main ()
     scanf("%d",&n);
     print_fact(n);
 }
+
+
