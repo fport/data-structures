@@ -6,13 +6,13 @@
 Yararlanılan siteye ulaşmak için [tıkla](https://www.geeksforgeeks.org/linked-list-set-1-introduction/?ref=lbp)
 
 ## 🔎Doğrusal Veri Yapıları (Linear Data Structures)
-- Dizi (Array)
-- [Bağlı Liste](https://github.com/FurkanPortakal/data-structures/blob/main/linkedList/linkedlist.md) (Linked List) 
-- Yığın (Stack)
-- Kuyruk (Queue)
+- [x] Dizi (Array)
+- [x] [Bağlı Liste](https://github.com/FurkanPortakal/data-structures/blob/main/linkedList/linkedlist.md) (Linked List) 
+- [x] Yığın (Stack)
+- [ ] Kuyruk (Queue)
 
 ## 🔎Doğrusal Olmayan Veri Yapıları (Non Linear Data Structures)
-- Ağaç (Tree)
-- Graf (Graph)
+- [ ] Ağaç (Tree)
+- [ ] Graf (Graph)
 
 
