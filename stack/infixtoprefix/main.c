@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include "header.h"
 
- 
+
 
 int priority(char token)
 {
@@ -14,13 +14,13 @@ int priority(char token)
     return 0;
 }
 
- 
+
 
 bool isOperator(char token)
 {
     if(token=='*' || token=='/' || token=='+' || token=='-')
         return true;
-        return false;
+    return false;
 }
 int main()
 {
@@ -29,12 +29,12 @@ int main()
     char postfix[80]={0};
     char temp[2]={0};
 
- 
+
 
     STACK* stack;
     stack=createStack();
 
- 
+
 
     printf("Lutfen infix ifadenizi giriniz: \n");
     while((token=getchar())!='\n')
@@ -46,43 +46,43 @@ int main()
             pushStack(stack,dataPtr);
         }
         else if(token==')')
-           {
-              dataPtr=(char*)popStack(stack);
-              while(*dataPtr!='(')
-              {
-                  temp[0]=*dataPtr;
-                  strcat(postfix,temp);
-                  dataPtr=(char*)popStack(stack);
-              }
-           }
-
- 
-
-           else if(isOperator(token))
-           {
-               dataPtr=(char*)stackTop(stack);
-               while(!emptyStack(stack) && priority(token) <= priority(*dataPtr))
-                   {
-                   dataPtr=(char*)popStack(stack);
-                   temp[0]=*dataPtr;
-                   strcat(postfix,temp);
-                   dataPtr=(char*)stackTop(stack);
-                   }
-                   dataPtr=(char*)malloc(sizeof(char));
-                   *dataPtr=token;
-                   pushStack(stack,dataPtr);
-
- 
-
-           }
-
- 
-
-           else
+        {
+            dataPtr=(char*)popStack(stack);
+            while(*dataPtr!='(')
             {
-               temp[0]=token;
-               strcat(postfix,temp);
+                temp[0]=*dataPtr;
+                strcat(postfix,temp);
+                dataPtr=(char*)popStack(stack);
             }
+        }
+
+
+
+        else if(isOperator(token))
+        {
+            dataPtr=(char*)stackTop(stack);
+            while(!emptyStack(stack) && priority(token) <= priority(*dataPtr))
+            {
+                dataPtr=(char*)popStack(stack);
+                temp[0]=*dataPtr;
+                strcat(postfix,temp);
+                dataPtr=(char*)stackTop(stack);
+            }
+            dataPtr=(char*)malloc(sizeof(char));
+            *dataPtr=token;
+            pushStack(stack,dataPtr);
+
+
+
+        }
+
+
+
+        else
+        {
+            temp[0]=token;
+            strcat(postfix,temp);
+        }
     }
     while(!emptyStack(stack))
     {
@@ -94,7 +94,7 @@ int main()
     puts(postfix);
     destroyStack(stack);
 
- 
+
 
     return 0;
 }

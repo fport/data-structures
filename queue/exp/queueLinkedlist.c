@@ -75,26 +75,26 @@ void display()
 }
 
 int main(){
-  int selected, num;
-  while(1){
-      printf("\n1 -- Add \n");
-      printf("2 -- Delete \n");
-      printf("3 -- Display \n");
-      printf("4 -- Exit \n");
-      printf("Select the action you want to do : \n");
+    int selected, num;
+    while(1){
+        printf("\n1 -- Add \n");
+        printf("2 -- Delete \n");
+        printf("3 -- Display \n");
+        printf("4 -- Exit \n");
+        printf("Select the action you want to do : \n");
 
-      scanf("%d",&selected);
-      switch(selected){
-          case 1 : printf("Enter a number");
-            scanf("%d",&num);
-            addElement(num);
-            break;
-          case 2 : deleteElement();
-                   break;
-          case 3 : display();
-                   break;
-          case 4 :  return 0;  
-      }
-  }
+        scanf("%d",&selected);
+        switch(selected){
+            case 1 : printf("Enter a number");
+                     scanf("%d",&num);
+                     addElement(num);
+                     break;
+            case 2 : deleteElement();
+                     break;
+            case 3 : display();
+                     break;
+            case 4 :  return 0;  
+        }
+    }
 }
 
