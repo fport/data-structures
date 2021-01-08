@@ -9,7 +9,7 @@ Yararlanılan siteye ulaşmak için [tıkla](https://www.geeksforgeeks.org/linke
 - [x] [Dizi (Array)](https://github.com/FurkanPortakal/data-structures/tree/main/array)
 - [x] [Bağlı Liste (Linked List) ](https://github.com/FurkanPortakal/data-structures/tree/main/linkedlist) 
 - [x] [Yığın (Stack)](https://github.com/FurkanPortakal/data-structures/blob/main/stack/stack.md)  
-- [x] [Kuyruk (Queue)](https://github.com/FurkanPortakal/data-structures/tree/main/queue/QUEUE.md)
+- [x] [Kuyruk (Queue)](https://github.com/FurkanPortakal/data-structures/blob/main/queue/exp/QUEUE.md)
 
 ## 🔎Doğrusal Olmayan Veri Yapıları (Non Linear Data Structures)
 - [ ] Ağaç (Tree)
