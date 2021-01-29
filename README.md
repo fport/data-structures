@@ -12,7 +12,7 @@ Yararlanılan siteye ulaşmak için [tıkla](https://www.geeksforgeeks.org/linke
 - [x] [Kuyruk (Queue)](https://github.com/FurkanPortakal/data-structures/blob/main/queue/exp/QUEUE.md)
 
 ## 🔎Doğrusal Olmayan Veri Yapıları (Non Linear Data Structures)
-- [ ] Ağaç (Tree)
+- [x] [Ağaç (Tree)](https://github.com/FurkanPortakal/data-structures/tree/main/trees)
 - [ ] Graf (Graph)
 
 
